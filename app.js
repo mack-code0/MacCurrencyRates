@@ -2,7 +2,7 @@ const express = require('express');
 const app = express()
 const ratesAPI = require("./api/rates")
 
-app.get("/index", (req, res)=>{
+app.get("/", (req, res)=>{
     var form = "<form action='/api/rates' method='GET'>"
     +"<input type='text' name='base' placeholder='Base' />"
     +"<input type='text' name='rates' placeholder='Rates' />"
