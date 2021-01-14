@@ -2,7 +2,7 @@ const express = require('express');
 const route = express.Router()
 const axios = require("axios").default
 
-route.get("/rates", (req, res)=>{
+route.get("/api/rates", (req, res)=>{
     const base = req.query.base
     const rates = req.query.rates
     
