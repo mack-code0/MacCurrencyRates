@@ -4,7 +4,8 @@
   "description": "A REST endpoint for returning a JSON object of the latest currency rates",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "Macaulay Uzu",
   "license": "ISC",
