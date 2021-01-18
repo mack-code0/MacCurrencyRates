@@ -4,7 +4,7 @@ const axios = require("axios").default
 
 route.get("/api/rates", (req, res)=>{
     const base = req.query.base
-    const rates = req.query.rates
+    const rates = req.query.currency
     
     axios({
         method: "GET",
