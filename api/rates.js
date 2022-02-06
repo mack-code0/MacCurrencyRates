@@ -9,7 +9,7 @@ route.get("/api/rates", (req, res)=>{
     
     axios({
         method: "GET",
-        url: "https://api.exchangeratesapi.io/v1/latest?access_key="+process.env.MY_KEY+"&base="+base+"&symbols="+symbols,
+        url: "http://api.exchangeratesapi.io/v1/latest?access_key="+process.env.MY_KEY+"&symbols="+symbols+"&format=1",
         responseType: "text"
     }).then((resp)=>{
         const result = {
