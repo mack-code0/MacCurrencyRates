@@ -4,10 +4,12 @@ const axios = require("axios").default
 
 route.get("/api/rates", (req, res)=>{
     const {base, symbols} = req.query
+
+    console.log(base+" "+symbols);
     
     axios({
         method: "GET",
-        url: "https://api.exchangeratesapi.io/latest?access_key="+process.env.MY_KEY+"&base="+base+"&symbols="+symbols,
+        url: "https://api.exchangeratesapi.io/v1/latest?access_key="+process.env.MY_KEY+"&base="+base+"&symbols="+symbols,
         responseType: "text"
     }).then((resp)=>{
         const result = {
