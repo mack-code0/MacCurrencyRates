@@ -23,6 +23,7 @@ route.get("/api/rates", (req, res)=>{
     }).catch((err)=>{
         res.statusCode = 400
         res.json({
+            "more": base+" "+symbols,
             'error': "An error occured while parsing your request"
         })
     })
